@@ -1,4 +1,4 @@
-## common_use 持续更新中。。。 [放置一些常用的组件，方便开发](https://github.com/410675629/common_use/blob/master/README.md)
+## common_use  [放置一些常用的组件，方便开发](https://github.com/410675629/common_use/blob/master/README.md)
 
 ####1 增加数字键盘组件 `keyBoard`
 
@@ -18,4 +18,4 @@
 
 ####7 增加seajsTest组件 `seajs` amd 标准案例
 
-
+持续更新中。。。
