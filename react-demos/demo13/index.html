@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="../build/react.js"></script>
+    <script src="../build/JSXTransformer.js"></script>
+    <script src="../build/jquery.min.js"></script>
+  </head>
+  <body>
+  	<div id="ex"></div>
+   	<script type="text/jsx">
+   		var HelloWorld = React.createClass({
+        render: function() {
+          return (
+            <p>
+              Hello, <input type="text" placeholder="Your name here" />!
+              It is {this.props.date.toTimeString()}
+            </p>
+          );
+        }
+      });
+
+
+   		setInterval(function() {
+        React.render(
+          <HelloWorld date={new Date()} />,
+          document.getElementById('ex')
+        );
+      }, 500);
+   	</script>
+  </body>
+</html>
