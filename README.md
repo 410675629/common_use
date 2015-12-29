@@ -1,4 +1,4 @@
-## common_use [放置一些常用的组件，方便开发]()
+## common_use [放置一些常用的组件，方便开发](https://github.com/410675629/common_use/blob/master/README.md)
 
 ####1 增加数字键盘组件 `keyBoard`
 
