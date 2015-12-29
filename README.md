@@ -5,7 +5,7 @@
 
 ####2 增加seajsTest组件 `seajs`
 
-####3 增加`reachjsDemo`组件 
+####3 增加`reactjsDemo`组件 
 >*from [阮一峰的网络日志](http://www.ruanyifeng.com/blog/2015/03/react.html) 
 
 ####4 增加`rotate `单页面应用`组件 
