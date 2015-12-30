@@ -1,0 +1,15 @@
+/*css_hack 主要是针对IE低版本*/
+
+ #1 、属性前缀法
+
+ IE 6 支持 "*","_";
+ IE 7 只支持 "_"
+
+ #2、选择器前缀法
+  IE 6 支持 *html .class
+  IE 7 支持 *+html .class
+
+ #条件注释法
+
+ <!--[if IE]></[end IE]-->
+ <!--[if gt ie6]></[end ie6]-->
