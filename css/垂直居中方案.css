@@ -1,0 +1,43 @@
+/*垂直居中方案*/
+.container {
+  height: 100px;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+/*单行垂直居中*/
+.class{
+	height: 100px;
+	line-height: 100px;
+}
+
+/*利用变形处理*/
+.class{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: 50%;
+	left: 50%;
+	background: red;
+	/* margin:  -50px 0 0 -50px; */
+	-webkit-transform: translate3d(-50px ,-50px,0);
+	transform: translate3d(-50px, -50px,0);
+}
+
+
+/*已table布局*/
+
+.content{
+	width: 400px;
+	height: 300px;
+	display: table;
+}
+.middle{
+	display: table-cell;
+	vertical-align: middle;
+	width: 100px;
+	height: 100px;
+}
