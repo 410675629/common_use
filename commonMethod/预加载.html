@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>预加载</title>
+</head>
+<body>
+	<pre>
+		IE中使用new Image().src 去预加载文件。 
+		其他浏览器使用动态插入document.createElement('object')标签来完成加载。
+	</pre>
+	<pre>
+		说明： </br>
+		1. new Image().src 之所以不能在ff中使用是因为ff对图片实现了一套单独的缓存。同时safari和chrome看起来也没有被缓存。</br>
+		2. 动态插入object 标签需要插入到非head部分，以触发加载。 </br>
+		3. ie7 ie8 也可以通过一些代码使用动态object加载文件。</br>
+	</pre>
+	</br>
+
+	<section>
+		给个demo
+	</section>
+	<code>
+		//arr =["image.png"....]
+
+		preloadimg : function(arr, callback){
+			var flag = true,
+				n = 0;
+			var loadImg = function(src){
+				var img = new Image();
+				img.onload = function(){
+					n++;
+					var t = Math.round(n/l*100);
+					if(t >= 97 && flag){
+						callback();
+						flag = false;
+					}
+				}
+				img.src = src;
+			}
+			if(typeof(arr) == "string"){
+				var l = 1;
+				var w = new loadImg(arr);
+			}else{
+				var l = arr.length;
+				for(var i=0;i<l;i++){
+					var w = new loadImg("image/" + arr[i]);
+				}
+			}
+		}
+	</code>
+
+	参考：http://www.cnblogs.com/tugenhua0707/p/3525668.html
+</body>
+</html>
