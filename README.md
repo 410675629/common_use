@@ -19,3 +19,4 @@
 ####7 增加seajsTest组件 `seajs` amd 标准案例
 
 持续更新中。。。
+the temp
